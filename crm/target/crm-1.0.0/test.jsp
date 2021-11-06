@@ -1,23 +1,19 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: shenfengyuan
-  Date: 2021/11/1
-  Time: 9:13 下午
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+        String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 	request.getServerPort() + request.getContextPath() + "/";
+%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+<base href="<%=basePath%>">
     <title>Title</title>
 </head>
 <body>
 
 
 $.ajax({
-
         url :"",
         data : {
-
 
         },
         type:"",
@@ -25,7 +21,12 @@ $.ajax({
         success : function (data){
 
         }
-
 })
+
+
+//创建时间是当前时间
+String createTime = DateTimeUtil.getSysTime();
+String createBy = ((User)request.getSession().getAttribute("user")).getName();
+
 </body>
 </html>

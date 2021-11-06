@@ -32,7 +32,6 @@ public class PrintJson {
 		}
 		
 		
-		
 	}
 	
 	//将对象解析为json串

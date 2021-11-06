@@ -9,6 +9,7 @@
   <typeAliases>
 
   	<package name="com.sfy.crm.settings.domain"/>
+    <package name="com.sfy.crm.workbench.domain"/>
   
   </typeAliases>
   
@@ -28,6 +29,7 @@
   <mappers>
    
   <package name="com.sfy.crm.settings.dao"/>
+    <package name="com.sfy.crm.workbench.dao"/>
     
   </mappers>
 </configuration>
